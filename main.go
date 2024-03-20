@@ -3,6 +3,7 @@ package main
 import (
 	"generic/any"
 	"generic/operator"
+	"generic/product"
 	"generic/restriction"
 	"log"
 )
@@ -34,5 +35,12 @@ func main() {
 
 	log.Printf("%+v\n", operator.Filter(numbers, func(value int) bool { return value > 3 }))
 	log.Printf("%+v\n", operator.Filter(strings, func(value string) bool { return value > "b" }))
+
+	//estructuras genericas
+	product1 := product.Product[uint]{1, "Zapatos", 50}
+	product2 := product.Product[string]{"6B29FC40-CA47-1067-B31D-00DD010662DA", "Zapatos", 50}
+
+	log.Printf("%+v\n", product1)
+	log.Printf("%+v\n", product2)
 
 }
