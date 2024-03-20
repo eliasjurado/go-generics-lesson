@@ -17,4 +17,7 @@ func main() {
 
 	log.Printf("%+v\n", restriction.SumAproximacion(4, 5, 6))
 	log.Printf("%+v\n", restriction.SumAproximacion(4.2,5.34,6.0035))
+
+	log.Printf("%+v\n", restriction.SumConstraints(4, 5, 6))
+	log.Printf("%+v\n", restriction.SumConstraints(4.2,5.34,6.0035))
 }
